@@ -16,6 +16,7 @@ io.on("connection", socket => {
 
   app.get("/python", (req, res) => {
     console.log("ojas");
+    res.send("ok");
     socket.emit("python", "true");
   });
 });
